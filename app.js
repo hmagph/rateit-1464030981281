@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json()); // parse application/json
 console.log("appEnv = "+ JSON.stringify(appEnv));
-require("./app/database.js")(appEnv, “rateit-cloudantNoSQLDB", “todos”, function (err, database) {
+require("./app/database.js")(appEnv, "rateit-cloudantNoSQLDB", "todos", function (err, database) {
   if (err) {
     console.log(err);
   } else {
